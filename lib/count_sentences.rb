@@ -15,6 +15,7 @@ class String
   end
 
   def count_sentences
-    self.split(/[.?!]/).count
+    setences = []
+    self.split(/[.?!]/).each{|sentence| sentence != "" ? count += 1 : count = count}
   end
 end
